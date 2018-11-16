@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class ItemSlotData : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-	public int item { get; set; }
-	public int amount { get; set; }
+	public int Item { get; set; }
+	public int Amount { get; set; }
 
 	void Awake()
 	{
-		this.item = 0;
-		this.amount = 0;
+		this.Item = 0;
+		this.Amount = 0;
 	}
 
 	public void OnBeginDrag(PointerEventData eventData)
